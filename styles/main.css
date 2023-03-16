@@ -19,7 +19,7 @@ p:not(.slogan),
 .icon-list,
 .logo,
 h1,
-.right,
+.right-wrap,
 .mainInfo {
   width: auto;
 }
@@ -32,7 +32,7 @@ h1,
 }
 
 .container .row .left-wrap .left {
-  background-image: url(../img/Background_Japanese_Ally_1000x1000.webp);
+  background-image: url(../img/background.webp);
   background-repeat: no-repeat;
   background-position: 50% 100%;
   height: 100vh;
@@ -44,7 +44,7 @@ h1,
 }
 
 div.logo {
-  background-image: url(../img/SD_Dragon_White-Circle_Logo_512x512.webp);
+  background-image: url(../img/logo.webp);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 30%;
@@ -95,14 +95,14 @@ div.logo {
   font-size: 0.5em;
 }
 
-.container .right {
+.container .right-wrap {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
 }
 
 @media screen and (max-width: 576px) {
-  .container .right {
+  .container .right-wrap {
     height: 50vh;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -110,31 +110,31 @@ div.logo {
   }
 }
 
-.container .right .mainInfo {
+.container .right-wrap .mainInfo {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
 @media screen and (max-width: 576px) {
-  .container .right .mainInfo {
+  .container .right-wrap .mainInfo {
     text-align: center;
   }
 }
 
-.container .right .mainInfo h1 {
+.container .right-wrap .mainInfo h1 {
   font-size: 3em;
   margin-left: 0.7em;
   font-weight: 900;
 }
 
 @media screen and (max-width: 576px) {
-  .container .right .mainInfo h1 {
+  .container .right-wrap .mainInfo h1 {
     margin-left: 0;
   }
 }
 
-.container .right .mainInfo .slogan {
+.container .right-wrap .mainInfo .slogan {
   width: 50vw;
   margin-top: 1.5em;
   color: #8491a0;
@@ -142,22 +142,22 @@ div.logo {
 }
 
 @media screen and (max-width: 576px) {
-  .container .right .mainInfo .slogan {
+  .container .right-wrap .mainInfo .slogan {
     width: auto;
   }
 }
 
-.container .right .mainInfo .form-subscribe {
+.container .right-wrap .mainInfo .form-subscribe {
   margin-top: 0.5em;
 }
 
 @media screen and (max-width: 576px) {
-  .container .right .mainInfo .form-subscribe {
+  .container .right-wrap .mainInfo .form-subscribe {
     margin-left: 0;
   }
 }
 
-.container .right .mainInfo .form-subscribe .form {
+.container .right-wrap .mainInfo .form-subscribe .form {
   height: 40px;
   padding: 0;
   margin-right: -6px;
@@ -166,7 +166,7 @@ div.logo {
   padding-left: 0.5em;
 }
 
-.container .right .mainInfo .form-subscribe button {
+.container .right-wrap .mainInfo .form-subscribe {
   width: 120px;
   height: 40px;
   border: 1px solid #e7e7e7;
@@ -177,16 +177,16 @@ div.logo {
 }
 
 @media screen and (max-width: 576px) {
-  .container .right .mainInfo .form-subscribe button {
+  .container .right-wrap .mainInfo .form-subscribe {
     width: 100px;
   }
 }
 
-.container .right .mainInfo .form-subscribe button:hover {
+.container .right-wrap .mainInfo .form-subscribe {
   cursor: pointer;
 }
 
-.container .right .icon-list {
+.container .right-wrap .icon-list {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,29 +201,29 @@ div.logo {
 }
 
 @media screen and (max-width: 576px) {
-  .container .right .icon-list {
+  .container .right-wrap .icon-list {
     -webkit-transform: translateY(-0.1em);
     transform: translateY(-0.1em);
     padding-left: 0;
   }
 }
 
-.container .right .icon-list .icon {
+.container .right-wrap .icon-list .icon {
   margin-left: -0.2em;
   margin-right: 1.2em;
   font-size: 1.5em;
 }
 
-.container .right .icon-list .icon a {
+.container .right-wrap .icon-list .icon a {
   color: #e7e7e7;
   text-decoration: none;
 }
 
-.container .right .icon-list .icon a:hover{
+.container .right-wrap .icon-list .icon a:hover{
   color: #c2263b;
 }
 
-.right,
+.right-wrap,
 .mainInfo,
 .left {
   display: -webkit-box;
@@ -240,7 +240,6 @@ div.logo {
 
 h1,
 .slogan,
-button,
 .form {
   font-family: 'Work Sans', sans-serif;
   font-size: 18px;
@@ -253,7 +252,6 @@ button,
 }
 
 @media screen and (max-width: 576px) {
-
   .slogan,
   .form-subscribe {
     margin-left: auto;
@@ -275,16 +273,6 @@ button,
   content: "\f16d";
 }
 
-.github::before {
-  font-family: "Font Awesome 5 Brands";
-  content: "\f09b";
-}
-
-.stackoverflow::before {
-  font-family: "Font Awesome 5 Brands";
-  content: "\f16c";
-}
-
 .youtube::before {
   font-family: "Font Awesome 5 Brands";
   content: "\f167";
@@ -298,4 +286,24 @@ button,
 .linkedin::before {
   font-family: "Font Awesome 5 Brands";
   content: "\f08c";
+}
+
+.tiktok::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\e07b";
+}
+
+.github::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f09b";
+}
+
+.stackoverflow::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f16c";
+}
+
+.rss::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f143";
 }
