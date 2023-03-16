@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  website:
+    image: nginx:latest
+    container_name: website-coming-soon
+    restart: unless-stopped
+    volumes:
+      - /YOUR-HOST-PATH/:/usr/share/nginx/html:ro
+    ports:
+      - 8080:80
