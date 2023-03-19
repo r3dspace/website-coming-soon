@@ -34,6 +34,7 @@ h1,
 .container .row .left-wrap .left {
   background-image: url(../img/background.webp);
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: 50% 100%;
   height: 100vh;
   -webkit-box-align: center;
@@ -204,7 +205,9 @@ div.logo {
   .container .right-wrap .icon-list {
     -webkit-transform: translateY(-0.1em);
     transform: translateY(-0.1em);
-    padding-left: 0;
+    padding-left: 1.2em;
+    padding-right: -0.2em;
+	margin: 0 auto;
   }
 }
 
