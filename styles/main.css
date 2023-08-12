@@ -207,7 +207,7 @@ div.logo {
     transform: translateY(-0.1em);
     padding-left: 1.2em;
     padding-right: -0.2em;
-	margin: 0 auto;
+	  margin: 0 auto;
   }
 }
 
@@ -222,7 +222,7 @@ div.logo {
   text-decoration: none;
 }
 
-.container .right-wrap .icon-list .icon a:hover{
+.container .right-wrap .icon-list .icon a:hover {
   color: #c2263b;
 }
 
